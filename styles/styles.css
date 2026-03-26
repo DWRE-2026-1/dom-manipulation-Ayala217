@@ -2,4 +2,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+body{
+    background: linear-gradient(304deg, #b7e8e2, #a0eab9);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+#app{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 8px;
+}
+
+#input-container{
+    display: flex;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+input{
+    flex:1;
+    border-radius: 5px;
+    
+}
+
+#add-btn{
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-list{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn{
+    margin-left: 16px;
+    border-radius: 5px;
+    background-color: rgb(188, 96, 96);
+    height: 30px;
+    width: 65px;
+}
+
+@media (max-width: 768px) {
+    #app {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    #input-container {
+        flex-direction: column;
+    }
 }
